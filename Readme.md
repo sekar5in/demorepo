@@ -406,3 +406,18 @@ Date:   Mon Jun 7 13:55:31 2021 +0000
     first commit
 [root@qhtdevauth git-training]# 
 
+
+
+
+# Archive Your Repository
+
+## git archive master --format=zip -output=gittranining.zip
+
+# Bundle the repository
+## git bundle create ../repo.bundler master
+
+# Stash the Uncommited Changes
+## git stash
+## git stash apply
+
+
