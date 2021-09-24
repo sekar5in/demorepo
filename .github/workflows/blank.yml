@@ -1,6 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
+env:
+      APP_VERSION: 5.5.6
 
 # Controls when the workflow will run
 on:
@@ -27,7 +29,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: |
+          echo Hello, world! 
+          echo ${{ env.APP_VERSION }}
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
