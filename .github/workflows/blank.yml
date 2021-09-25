@@ -22,6 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: versioning/blank
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
@@ -29,11 +30,11 @@ jobs:
       - name: Run a one-line script
         run: |
           echo Hello, world! 
-          echo $VERSION.VER
-          echo "APP_VERSION=6.1.2" >> $GITHUB_ENV
+          sh /home/runner/work/versioning/versioning/version.sh
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo "Here you go :" $xcode_version
