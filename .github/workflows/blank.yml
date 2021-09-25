@@ -33,7 +33,7 @@ jobs:
       - name: Run a one-line script
         run: |
           echo Hello, world! 
-          ls -lhRt /home/runner
+          sh /home/runner/work/demorepo/demorepo/version.sh
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
