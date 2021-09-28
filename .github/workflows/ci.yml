@@ -42,5 +42,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "You have installation starts with version $GITHUB_VERSION"
+          echo "You have installation starts with version $(`cat version.json`)"
           cat version.json 
