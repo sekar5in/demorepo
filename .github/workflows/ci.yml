@@ -42,5 +42,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "You have installation starts with version $(`cat version.json`)"
+          echo "You have installation starts with version $(awk '{ print $1 }' version.json)"
           cat version.json 
