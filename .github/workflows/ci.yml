@@ -35,11 +35,12 @@ jobs:
         run: |
           echo Hello, world!
           cat version.json 
-          cat version.json >> GITHUB_VERSION
-        
+          
+
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
           echo "You have installation starts with version $GITHUB_VERSION"
+          cat version.json 
