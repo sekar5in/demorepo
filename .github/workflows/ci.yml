@@ -29,7 +29,7 @@ jobs:
         with:
          repository: sekar5in/versioning
          path: './'
-         token: ${{ secrets.VER }}
+         token: ${{ secrets.PAT }}
          persist-credentials: false
 
       # Runs a single command using the runners shell
