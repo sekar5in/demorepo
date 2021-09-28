@@ -29,7 +29,7 @@ jobs:
         with:
          repository: sekar5in/versioning
          path: './'
-         token: '{{ secrets.$GITHUB_ACTOR }}'
+         token: '{{ secrets.$VER }}'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
